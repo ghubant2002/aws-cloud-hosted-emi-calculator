@@ -16,7 +16,7 @@ The objective of this project is to demonstrate AWS proficiency by evolving a st
 | **Amazon DynamoDB** | Permanently stores calculation history in the `EMI_History` NoSQL table. Each item uses `calculationId` as its string partition key, and On-Demand capacity automatically adapts to the application's request volume. |
 | **AWS Identity and Access Management (IAM)** | Enforces least-privilege security through a dedicated Lambda execution role. The role permits CloudWatch logging and grants only `dynamodb:PutItem` access to the specific `EMI_History` table. |
 
-## Architecture & Flow
+## Architecture Flow
 
 <!-- Cntrl+click emi.png -->
 
