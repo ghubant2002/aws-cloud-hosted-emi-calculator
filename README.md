@@ -18,15 +18,6 @@ The objective of this project is to demonstrate AWS proficiency by evolving a st
 
 ## Architecture & Flow
 
-flowchart LR
-    User((User\nBrowser)) -- "1. Enters Data\n(index.html)" --> S3[Amazon S3\nStatic Web Hosting]
-    S3 -- "2. POST Request\n(JavaScript Fetch)" --> API[Amazon API Gateway\nREST API: /calculate]
-    API -- "3. Triggers\n(Proxy Integration)" --> Lambda[AWS Lambda\nNode.js Compute]
-    Lambda -- "4. Saves Record\n(PutCommand)" --> DDB[(Amazon DynamoDB\nEMI_History Table)]
-    
-    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:black;
-    class S3,API,Lambda,DDB aws;
-
 <!-- Cntrl+click emi.png -->
 
 ![alt text](emi.png)  
